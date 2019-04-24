@@ -79,7 +79,7 @@ Example for Maven:
 and for Gradle:
 
 ```groovy
-compile 'io.reactivex.rxjava2:rxkotlin:x.y.z'
+implementation 'io.reactivex.rxjava2:rxkotlin:x.y.z'
 ```
 
 ### RxKotlin 1.x 
@@ -97,7 +97,7 @@ Example for Maven:
 and for Gradle:
 
 ```groovy
-compile 'io.reactivex:rxkotlin:x.y.z'
+implementation 'io.reactivex:rxkotlin:x.y.z'
 ```
 
 ### Building with JitPack
@@ -112,7 +112,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.ReactiveX:RxKotlin:2.x-SNAPSHOT'
+    implementation 'com.github.ReactiveX:RxKotlin:2.x-SNAPSHOT'
 }
 ```
 
@@ -156,7 +156,7 @@ Learn more about building this project with JitPack [here](https://jitpack.io/#R
 |Observable<Pair<A,B>>|toMap()|Single<Map<A,B>>|Collects `Pair<A,B>` emissions into a `Map<A,B>`|
 |Observable<Pair<A,B>>|toMultimap()|`Single<Map<A, List<B>>`|Collects `Pair<A,B>` emissions into a `Map<A,List<B>>`|
 |Observable<Observable<T>>|mergeAll()|Observable<T>|Merges all Observables emitted from an Observable|
-|Observable<Observable<T>>|concatAll()|Observable<T>|Cocnatenates all Observables emitted from an Observable|
+|Observable<Observable<T>>|concatAll()|Observable<T>|Concatenates all Observables emitted from an Observable|
 |Observable<Observable<T>>|switchLatest()|Observable<T>|Emits from the last emitted Observable|
 |Observable<*>|cast()|Observable<R>|Casts all emissions to the reified type|
 |Observable<*>|ofType()|Observable<R>|Filters all emissions to only the reified type|
